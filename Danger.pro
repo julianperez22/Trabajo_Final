@@ -11,13 +11,18 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    personaje.cpp
+    personaje.cpp \
+    registro.cpp
 
 HEADERS += \
     mainwindow.h \
-    personaje.h
+    personaje.h \
+    registro.h
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+FORMS += \
+    registro.ui
