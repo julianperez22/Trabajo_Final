@@ -9,12 +9,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    escenario.cpp \
     main.cpp \
     mainwindow.cpp \
     personaje.cpp \
     registro.cpp
 
 HEADERS += \
+    escenario.h \
     mainwindow.h \
     personaje.h \
     registro.h
@@ -25,4 +27,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
+    mainwindow.ui \
     registro.ui
