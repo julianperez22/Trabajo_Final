@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/escenario">
+        <file>escenario/escenario.png</file>
+        <file>escenario/muro1.png</file>
+        <file>escenario/muro2.png</file>
+        <file>escenario/muro3.png</file>
+        <file>Bonos/moneda.png</file>
+        <file>Bonos/orbes de energia.png</file>
+        <file>escenario/puerta.png</file>
+        <file>escenario/menu.png</file>
+        <file>escenario/option.png</file>
+        <file>Bonos/item.png</file>
+        <file>Personaje/1.png</file>
+        <file>Personaje/2.png</file>
+        <file>Personaje/3.png</file>
+        <file>Personaje/4.png</file>
+        <file>Personaje/5.png</file>
+        <file>Personaje/6.png</file>
+        <file>Personaje/7.png</file>
+        <file>Personaje/8.png</file>
+        <file>Personaje/14.png</file>
+        <file>Personaje/15.png</file>
+        <file>Personaje/16.png</file>
+        <file>escenario/WIN.png</file>
+        <file>Personaje/subiendo.png</file>
+    </qresource>
+    <qresource prefix="/personaje">
+        <file>Personaje/corriendo.png</file>
+        <file>Personaje/corriendoizq.png</file>
+        <file>Personaje/icon.png</file>
+    </qresource>
+    <qresource prefix="/obstaculos">
+        <file>obstaculo/zona de muerte.png</file>
+        <file>obstaculo/torreta.png</file>
+        <file>obstaculo/torretader.png</file>
+        <file>obstaculo/bala.png</file>
+        <file>obstaculo/Vacio.png</file>
+    </qresource>
+    <qresource prefix="/Personaje">
+        <file>Personaje/corriendo.png</file>
+        <file>Personaje/corriendoizq.png</file>
+    </qresource>
+</RCC>

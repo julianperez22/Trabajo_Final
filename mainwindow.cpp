@@ -24,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     menu->setBackgroundBrush(QImage(":/escenario/escenario/option.png").scaled(1000,650));
     ui->graphicsView->setScene(menu);
     setFixedSize(1900/2,1150/2);
-    setWindowTitle("Poison Run");
+    setWindowTitle("Danger rush");
     setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
 
     mundo= new QGraphicsItemGroup;
@@ -42,8 +42,8 @@ MainWindow::MainWindow(QWidget *parent)
     //connect(timfis,SIGNAL(timeout()),this,SLOT(simulacion()));
 
 
-    ui->inicio->setGeometry(385,200,120,80);
-    ui->salir->setGeometry(385,300,120,80);
+    ui->inicio->setGeometry(190,150,120,80);
+    ui->salir->setGeometry(190,250,120,80);
     ui->partida->hide();
     ui->anterior->hide();
     ui->label->hide();
@@ -52,11 +52,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->monedas->hide();
     ui->aceptar->hide();
 
-    ui->inicio->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->salir->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->partida->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->anterior->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->aceptar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
+    ui->inicio->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->salir->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->partida->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->anterior->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->aceptar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
 
 }
 
@@ -77,72 +77,72 @@ void MainWindow::set_window(int MAPA)
     MAPA=variable;
     if(MAPA==1)
     {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
     }
     else if(MAPA==2)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene2);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene2->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene2->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==3)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene3);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene3->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene3->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==4)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*40+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene4);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene4->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene4->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==5)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene5);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene5->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene5->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==6)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene6);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene6->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene6->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==7)
         {
-        ui->graphicsView->setGeometry(0,0,tam*50+2,tam*(14+2)+2);
+        ui->graphicsView->setGeometry(0,0,tam*30+2,tam*(14+2)+2);
         ui->graphicsView->setScene(scene7);
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/escenario.png").scaled(tam*50,tam*(14+2)));
-        scene7->setSceneRect(0,0,tam*50,tam*(14+2));//tamaño de la escena
-        setFixedSize(tam*50+2,tam*(14+2)+2);
-        setWindowTitle("Poison Run");
+        scene7->setSceneRect(0,0,tam*100,tam*(14+2));//tamaño de la escena
+        setFixedSize(tam*30+2,tam*(14+2)+2);
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
     else if(MAPA==8)
@@ -152,7 +152,7 @@ void MainWindow::set_window(int MAPA)
         ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/WIN.png").scaled(1000,650));
         scene8->setSceneRect(0,0,1890/2,1140/2);//tamaño de la escena
         setFixedSize(1900/2,1150/2);
-        setWindowTitle("Poison Run");
+        setWindowTitle("Danger Rush");
         setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
         }
 
@@ -604,12 +604,14 @@ void MainWindow::keyPressEvent(QKeyEvent *event)
     {
         //if(!EvaluaColision())
         getPlayer()->Mover_A_Izquierda(true);
+        ui->graphicsView->centerOn(getPlayer()->x(),getPlayer()->y());
 
     }
     else if (event->key() == Qt::Key_D)
     {
         //if(!EvaluaColision())
         getPlayer()->Mover_A_Derecha(true);
+        ui->graphicsView->centerOn(getPlayer()->x(),getPlayer()->y());
     }
     else if (event->key() == Qt::Key_W)
     {
@@ -626,9 +628,11 @@ void MainWindow::keyReleaseEvent(QKeyEvent *event)
 {
     if (event->key() == Qt::Key_A){
         getPlayer()->Mover_A_Izquierda(false);
+
     }
     else if (event->key() == Qt::Key_D){
         getPlayer()->Mover_A_Derecha(false);
+
     }
 }
 
@@ -640,6 +644,7 @@ void MainWindow::EvaluaColisionMovimiento()
 
     int next_x = getPlayer()->x();
     int next_y = getPlayer()->y();
+
 
     colision=false;
 
@@ -938,7 +943,7 @@ void MainWindow::on_inicio_clicked()
     option->setBackgroundBrush(QImage(":/escenario/escenario/menu.png").scaled(1000,650));
     ui->graphicsView->setScene(option);
     setFixedSize(1900/2,1150/2);
-    setWindowTitle("Poison Run");
+    setWindowTitle("Danger Rush");
     setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
 
 }
@@ -1056,6 +1061,7 @@ void MainWindow::ActualizarPosicionPersonaje()
     int next_x = getPlayer()->x();
     int next_y = getPlayer()->y();
 
+
     if(getPlayer()->getEnElAire() == true)
     {
         next_y += getPlayer()->getVy() * 1/60;
@@ -1068,10 +1074,12 @@ void MainWindow::ActualizarPosicionPersonaje()
     {
         getPlayer()->AumentarVelocidadDerecha();
 
+
     }
     else if(getPlayer()->getMoviendo_Izquierda())
     {
         getPlayer()->AumentarVelocidadIzquierda();
+
     }
     else
     {
@@ -1091,6 +1099,7 @@ void MainWindow::ActualizarPosicionPersonaje()
     getPlayer()->setPos(next_x,next_y);
     EvaluaColisionMovimiento();
     EvaluaColisionPoderes();
+
 }
 
 

@@ -71,7 +71,7 @@ private slots:
 
     void on_aceptar_clicked();
 
-    void disparoCanon();
+    //void disparoCanon();//
 
 
 private:

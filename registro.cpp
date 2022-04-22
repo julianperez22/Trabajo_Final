@@ -13,7 +13,7 @@ registro::registro(QWidget *parent) :
     ui->graphicsView->setBackgroundBrush(QImage(":/escenario/escenario/menu.png").scaled(1000,650));
     scene->setSceneRect(0,0,1890/2,1140/2);//tamaño de la escena
     setFixedSize(1900/2,1150/2);
-    setWindowTitle("Poison Run");
+    setWindowTitle("Danger Rush");
     setWindowIcon(QIcon(":/personaje/Personaje/icon.png"));
 
     ui->regist->setGeometry(400,150,120,80);
@@ -27,11 +27,11 @@ registro::registro(QWidget *parent) :
     ui->login->hide();
     ui->pass->hide();
 
-    ui->regist->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->crear->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->enviar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->volver->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
-    ui->entrar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(80,170,58);");
+    ui->regist->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->crear->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->enviar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->volver->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
+    ui->entrar->setStyleSheet("color: rgb(255, 255, 255);background-color: rgb(205,0,0);");
 
 }
 

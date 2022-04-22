@@ -17,7 +17,7 @@ escenario::escenario(int x, int y,int a,int b, QString clase, QObject *parent): 
     }
     else if(Clase=="plataforma"){
         original.load(":/escenario/escenario/muro1.png");
-        img = original.copy(16,0,16,16);
+        img = original.copy(38,0,38,38);
         setPixmap(img.scaled(scalex,scaley));
     }
     else if(Clase=="muro2"){
@@ -42,7 +42,7 @@ escenario::escenario(int x, int y,int a,int b, QString clase, QObject *parent): 
     }
     else if(Clase=="moneda"){
         original.load(":/escenario/Bonos/moneda.png");
-        img = original.copy(47,0,47,46);
+        img = original.copy(0,0,0,0);
         setPixmap(img.scaled(scalex,scaley));
     }
     else if(Clase=="orbe"){
@@ -72,7 +72,7 @@ escenario::escenario(int x, int y,int a,int b, QString clase, QObject *parent): 
     }
     else if(Clase=="zonaM"){
         original.load(":/obstaculos/obstaculo/zona de muerte.png");
-        img = original.copy(60,0,60,60);
+        img = original.copy(174,0,174,82);
         setPixmap(img.scaled(scalex,scaley));
     }
     else if(Clase=="torreta2"){

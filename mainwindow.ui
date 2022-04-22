@@ -83,7 +83,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>INICIO</string>
+     <string>JUGAR</string>
     </property>
    </widget>
    <widget class="QPushButton" name="partida">
@@ -109,7 +109,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Anterior</string>
+     <string>VOLVER</string>
     </property>
    </widget>
    <widget class="QPushButton" name="salir">
@@ -152,7 +152,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>25</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
